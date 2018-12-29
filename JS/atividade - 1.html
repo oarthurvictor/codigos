@@ -1,0 +1,33 @@
+<DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Aula de PAVI - 1</title>
+	</head>
+	<body>
+		<h1>Exercício 1</h1>
+		<p>Média:</p>
+		<p id="resultado"></p>
+		<p>Quantidade de números menores que a média:</p>
+		<p id="quantidade"></p>
+		
+		<script>
+			var x = prompt("Digite o primeiro número: ");
+			var y = prompt("Digite o segundo número: ");
+			var z = prompt("Digite o terceiro número: ");
+			var media = ((parseInt(x)+parseInt(y)+parseInt(z))/3);
+			document.getElementByID("resultado").innerHTML = media;
+			var count = 0;
+			if (parseInt(x) < parseInt(resultado)){
+				count++;
+			}
+			if (parseInt(y) < parseInt(resultado)){
+				count++;
+			}
+			if (parseInt(z) < parseInt(resultado)){
+				count++;
+			}
+			document.getElementByID("quantidade").innerHTML = count;
+		</script>
+	</body>
+</html>

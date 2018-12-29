@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var foo = 3;
+		var bar = 1;
+ 
+if (foo === 3) {
+  let foo = 5; // O escopo é dentro do bloco
+  var bar = 2; // O escopo é dentro da função
+ 
+  console.log(foo);  // 5
+  console.log(bar);  // 2
+} 
+
+ 
+console.log(foo); // 3
+console.log(bar); // 2
+for (let x = 0; x<5; x++) {
+  console.log(x); // 0, 1, 2, 3, 4 e 5
+}
+
+ 
+console.log(x); // x is not defined
+	</script>
+</body>
+</html>

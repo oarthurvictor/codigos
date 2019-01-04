@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Curso de Javascript - Funções</title>
+	<meta charset="utf-8">
+
+	<script>
+		//literal
+		function somar(n1, n2) {
+			return n1 + n2;
+		}
+
+		var soma = somar (10, 20);
+		console.log('Resultado: ', soma);
+
+		//função como objeto
+		somar.teste = 'propriedade da funcao';
+		console.log(somar.teste)
+
+		//função atribuida a variavel
+		var teste = function(str) {
+			console.log('teste', str)
+		};
+		teste('ola');
+
+		//função passada por parametro
+		var teste1 = function(f) {
+			f();
+		};
+		teste1(function() {
+			console.log('função por parametro');
+		});
+
+	</script>
+</head>
+<body>
+	<script>
+		
+	</script>
+</body>
+</html>
